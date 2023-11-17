@@ -1,4 +1,4 @@
 const myString = 'I Love JavaScript'
-const regex = /Kotlin/
-const containsRegex = regex.test(myString)
-console.log(containsRegex)
+const myRegex = /JavaScript/
+let newString = myString.replace(myRegex, 'Kotlin')
+console.log(newString)
