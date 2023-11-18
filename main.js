@@ -1,7 +1,12 @@
-console.log(1);
-console.log(2);
-setTimeout(() =>{
-    console.log(3);
-}, 3000)
-console.log(4);
-console.log(5);
+console.log('Start');
+function userInfo(name){
+    setTimeout(() => {
+        console.log('** User Info Received **');
+        return name 
+    }, 3000)
+    
+}
+
+let userName = userInfo('Khalid')
+console.log(userName);
+console.log('End');
