@@ -1,3 +1,5 @@
-let numbers = [1, 2, 3, 4, 5];
-let [first, second, ...others] = numbers;
-console.log(first, second, others[0]);
+let first = [1, 2, 3]
+let second = [4, 5]
+let third = [...first, ...second]
+
+console.log(third)
