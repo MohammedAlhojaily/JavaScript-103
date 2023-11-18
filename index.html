@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir='rtl' lang="ar" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          font-size: larger;
+          font-weight: bolder;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f7f7f7;
+        }
+        .container {
+          text-align: center;
+          background: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        input, button {
+          margin-top: 10px;
+          padding: 10px;
+          border: 1px solid #000000;
+          border-radius: 4px;
+          width: 80%;
+        }
+        button {
+          background-color: #007bff;
+          color: white;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #0056b3;
+        }
+        #text {
+          text-align: left;
+          margin-top: 20px;
+          border: 1px solid black;
+          border-radius: 10px;
+          
+        }
+      </style>
+</head>
+<body>
+<div class="container">
+    <label>الكلمة المراد البحث عنها</label>
+    <input type="text" id="search" placeholder="الكلمة المطلوبة">
+    <br>
+    <label>الكلمة البديلة</label>
+    <input type="text" id="replace" placeholder="الكلمة البديلة">
+    <button onclick="replace()">استبدل</button>
+    <div id="text">
+        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة, لقد تم توليد هذا النص من مولد النص العربي, حيث يمكنك أن تولد مثل هذه
+        النص أو العديد من النصوص الأخرى اضافة الى زيادة عدد الحروف
+        التي يولدها التطبيق. اذا كنت تحتاج الى عدد أكبر من الفقرات يتيح لك مولد النص العربي زيادة عدد الفقرات كما تريد.
+        النص لن يبدو مقسما ولا يحوي أخطاء لغوية, مولد النص العربي مفيد لمصممي المواقع على واجهة الخصوص.
+        حيث يحتاج العميل في كثير من الأحيان أن يطلع على صورة حقيقية لتصميم المواقع
+        ومن هنا وجب على المصمم أن يضع نصوصا موقتة على التصميم ليظهر للعميل الشكل كاملا 
+        دور مولد النص العربي أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
+        الذي يتحدث عنه التصميم فيظهر بشكل لا يليق هذا النص يمكن أن يتم تركيبه على أي تصميم
+        دون مشكلة فلن يبدو وكأنه نص منسوخ غير منظم غير منسق أو حتى غير مفهوم لأانه ما زال نصا بديلا وموقتا
+    </div>
+</div>
+</body>
+</html>
