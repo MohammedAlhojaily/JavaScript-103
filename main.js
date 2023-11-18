@@ -1,8 +1,7 @@
-function replace() {
-let searchText = document.getElementById('search').value;
-let replaceText = document.getElementById('replace').value;
-let text = document.getElementById('text').innerHTML;
-let newText = document.getElementById('text').value;
-let reg = new RegExp(searchText, 'gi')
-newText.innerHTML = text
-}
+console.log(1);
+console.log(2);
+setTimeout(() =>{
+    console.log(3);
+}, 3000)
+console.log(4);
+console.log(5);
