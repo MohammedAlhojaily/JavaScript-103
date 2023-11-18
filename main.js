@@ -3,8 +3,7 @@ let student = {
         firstName : 'Ali',
         lastName : 'Nasser'
     },
-    age : 25
+    '@my age' : 25
 }
 
-let {name:{lastName: yourLastName}} = student
-console.log(yourLastName);
+console.log(student['@my age'])
