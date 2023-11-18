@@ -1,3 +1,3 @@
-let numbers = [1, 2, [3, 4]]
-let [first, second, [firstValue, secondValue]] = numbers
-console.log(first, second, firstValue, secondValue);
+    let first = 5, second = 7;
+    [first, second] = [first, first]
+    console.log(first, second);
