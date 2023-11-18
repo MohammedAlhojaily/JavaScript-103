@@ -1,13 +1,16 @@
 console.log('Start');
-function userInfo(name, callback){
-    setTimeout(() => {
-        console.log('** User Info Received **');
-        callback(name) 
-    }, 3000)
-    
-}
 
-let userName = userInfo('Khalid', name =>{
- console.log(`Your name is ${name}`);  
+const newUser = new Promise((resolve, reject) =>{
+setTimeout(() =>{
+    const userInfo = {
+        name: 'Khalid',
+        age: 19
+    }
+    resolve(userInfo)
+}, 3000)
+})
+newUser.then(res => {
+    console.log('** User info received **');
+    console.log(res);
 })
 console.log('End');
