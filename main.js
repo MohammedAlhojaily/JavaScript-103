@@ -1,7 +1,10 @@
 let student = {
-    name : 'Ali',
-    age : 25,
+    name : {
+        firstName : 'Ali',
+        lastName : 'Nasser'
+    },
+    age : 25
 }
-let name = 'Saleh', age = 22;
-({name, age} = student)
-console.log(name, age)
+
+let {name:{lastName: yourLastName}} = student
+console.log(yourLastName);
