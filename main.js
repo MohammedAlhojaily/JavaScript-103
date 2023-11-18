@@ -1,8 +1,8 @@
 let student = {
     name : 'Salem',
-    age : 25,
+    age : 18,
     gender : false
 }
 
-let {name, ...others} = student
-console.log(name, others);
+let {name, nickname = 'unkown'} = student
+console.log(name, nickname);
