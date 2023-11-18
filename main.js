@@ -1,5 +1,3 @@
-console.log('Start');
-
 const newUser = new Promise((resolve, reject) =>{
 setTimeout(() =>{
     const userInfo = {
@@ -9,8 +7,20 @@ setTimeout(() =>{
     resolve(userInfo)
 }, 3000)
 })
-newUser.then(res => {
-    console.log('** User info received **');
-    console.log(res);
+
+const addNewUser = userInfo => {
+    let userAge = userInfo.age
+    let adultAge;
+    if( userAge >= 18 ){
+        adultAge = `${userInfo.name} is an Adult`
+    }else{
+        adultAge = `${userInfo.name} is not an Adult`
+    }
+    return Promise.resolve(adultAge)
+}
+newUser
+    .then(addNewUser)
+    .then(res => {
+        console.log('** User info received **');
+        console.log(res);
 })
-console.log('End');
