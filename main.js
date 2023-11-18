@@ -1,3 +1,3 @@
-    let first = 5, second = 7;
-    [first, second] = [first, first]
-    console.log(first, second);
+let colors = ['red', 'green'];
+[colors[0], colors[1]] = ['blue', 'black', 'white']
+console.log(colors);
