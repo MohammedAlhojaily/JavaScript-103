@@ -1,3 +1,3 @@
-let colors = ['red', 'green', 'black']
-let [firstColor, secondColor, thirdColor = 'blue'] = colors
-console.log(firstColor, secondColor, thirdColor);
+let colors = ['red', 'green', 'blue']
+let [,,firstColor] = colors
+console.log(firstColor);
