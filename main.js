@@ -1,5 +1,6 @@
-let first = [1, 2, 3]
-let second = [4, 5]
-let third = [...first, ...second]
+function sum(first, second, ...others){
+  console.log(...others);
+    return first + second
+}
 
-console.log(third)
+console.log(sum(1, 2, 6, 80, 75));
