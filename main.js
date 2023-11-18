@@ -1,3 +1,7 @@
-let colors = ['red', 'green'];
-[colors[0], colors[1]] = ['blue', 'black', 'white']
-console.log(colors);
+let student = {
+    name : 'Ali',
+    age : 25
+}
+
+let {name: yourName, age: yourAge} = student
+console.log(yourName, yourAge);
