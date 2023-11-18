@@ -1,6 +1,4 @@
-function sum(first, second, ...others){
-  console.log(...others);
-    return first + second
-}
+let numbers = [1, 2]
 
-console.log(sum(1, 2, 6, 80, 75));
+let [first, second, ...others] = numbers
+console.log(first, second, others);
